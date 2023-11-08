@@ -178,7 +178,7 @@ int main(int argc, char* argv[])
 
     printf("Creating and writing target file: %s ...\n", target_file);
 
-    ofstream outfile(target_file, ios::binary | ios::ate);
+    ofstream outfile(target_file, ios::binary | ios::beg);
     if (!outfile) {
         printf("Can't create/open target file\n");
         return 0x07;
